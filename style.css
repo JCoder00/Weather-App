@@ -1,0 +1,91 @@
+* {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Main divs */
+
+.header {
+  position: static;
+  text-align: center;
+  background-image: linear-gradient(to bottom, lightblue, aliceblue);
+  padding-top: 18em;
+  padding-bottom: 1em;
+  height: 60vh;
+}
+
+.display {
+  position: static;
+  text-align: center;
+  background-color: aliceblue;
+  min-height: 40vh;
+  padding-top: 4em;
+}
+
+/* Separate parts */
+
+.title {
+  padding: .6em 0;
+  color: steelblue;
+  font-size: 35pt;
+}
+
+.intro {
+  padding: .6em 0;
+  font-size: 14pt;
+}
+
+#loc-input {
+  padding: .4em;
+}
+
+#loc-btn {
+  padding: .4em;
+}
+
+#loc-btn:hover {
+  cursor: pointer;
+  background-color: #ddd;
+}
+
+#loc-btn:focus {
+  cursor: pointer;
+  background-color: #ccc;
+}
+
+#country {
+  position: relative;
+  overflow-x: visible;
+  left: 40%;
+  width: 20%;
+  font-size: 18pt;
+  font-weight: bold;
+  padding-bottom: 1em;
+  border-bottom: solid 2px black;
+}
+
+#desc {
+  position: relative;
+  font-style: italic;
+  left: 30%;
+  width: 40%;
+  font-size: 12pt;
+  padding-top: 1em;
+  padding-bottom: .5em;
+}
+
+#temp {
+  position: relative;
+  left: 45%;
+  width: 10%;
+  font-size: 13pt;
+  font-weight: lighter;
+  padding-top: .5em;
+  padding-bottom: 1em;
+}
