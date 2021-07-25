@@ -2,7 +2,7 @@ const textInput = document.getElementById("loc-input");
 const btnInput = document.getElementById("loc-btn");
 const container = document.getElementById("display");
 
-const API_key = "13665974ba197acea1164b3c4c8fde2c";
+const API_key = /* Your API key here */;
 
 btnInput.addEventListener('click', () => {
   const city = textInput.value;
