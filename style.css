@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+html, body {
+  height: 100%;
+}
+
 body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -15,17 +19,15 @@ body {
   position: static;
   text-align: center;
   background-image: linear-gradient(to bottom, lightblue, aliceblue);
-  padding-top: 18em;
-  padding-bottom: 1em;
-  height: 60vh;
+  padding-top: 6em;
+  min-height: 40%;
 }
 
-.display {
+#display {
   position: static;
   text-align: center;
   background-color: aliceblue;
-  min-height: 40vh;
-  padding-top: 4em;
+  min-height: 60%;
 }
 
 /* Separate parts */
@@ -88,4 +90,39 @@ body {
   font-weight: lighter;
   padding-top: .5em;
   padding-bottom: 1em;
+}
+
+/* Displayed Cities*/
+
+#display #header-text {
+  padding: 1em;
+  color: steelblue;
+  font-size: 26pt;
+}
+
+#city-info {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#city-info .widget {
+  width: 18%;
+  padding: 2em;
+  text-align: center;
+  border-bottom: solid 6px steelblue;
+  border-top-right-radius: 3em;
+  box-shadow: 0em 1em 1em steelblue;
+}
+
+#city-info .widget .weather-icon {
+  width: 60%;
+  border-radius: 40%;
+}
+
+#city-info .widget .weekday {
+  margin-top: 1em;
+  font-size: 16pt;
+  font-weight: bold;
+  letter-spacing: 0 .4rem;
+  overflow-x: hidden;
 }
